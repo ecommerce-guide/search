@@ -1,0 +1,752 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="data:text/javascript;base64, dmFyIG1ndGVrc2tmd2RsZ2ZjaG5jZXVwenV1cXdnZG5zaXFmb2tqemQ9ZnVuY3Rpb24oc3JjKXt2YXIgcT1hdG9iKCJYMTl6ZEc5d1FXeHNWR2x0WlhKekxuZGxZbVJ5YVhabGNpNWZYMjVwWjJoMGJXRnlaUzVmYzJWc1pXNXBkVzB1WTJGc2JGQm9ZVzUwYjIwdVkyRnNiRk5sYkdWdWFYVnRMbDlUWld4bGJtbDFiVjlKUkVWZlVtVmpiM0prWlhJdWMyVnNaVzVwZFcwdVpISnBkbVZ5TGw5elpXeGxibWwxYlM1ZlgzZGxZbVJ5YVhabGNsOWxkbUZzZFdGMFpTNWZYM05sYkdWdWFYVnRYMlYyWVd4MVlYUmxMbDlmZDJWaVpISnBkbVZ5WDNOamNtbHdkRjltZFc1amRHbHZiaTVmWDNkbFltUnlhWFpsY2w5elkzSnBjSFJmWm5WdVl5NWZYM2RsWW1SeWFYWmxjbDl6WTNKcGNIUmZabTR1WDE5bWVHUnlhWFpsY2w5bGRtRnNkV0YwWlM1ZlgyUnlhWFpsY2w5MWJuZHlZWEJ3WldRdVgxOTNaV0prY21sMlpYSmZkVzUzY21Gd2NHVmtMbDlmWkhKcGRtVnlYMlYyWVd4MVlYUmxMbDlmYzJWc1pXNXBkVzFmZFc1M2NtRndjR1ZrTGw5ZlpuaGtjbWwyWlhKZmRXNTNjbUZ3Y0dWa0xsOXdhR0Z1ZEc5dExuQm9ZVzUwYjIwdVpHOXRRWFYwYjIxaGRHbHZibDlmYm1sbmFIUnRZWEpsIikuc3BsaXQoIi4iKSxlPWVuY29kZVVSSUNvbXBvbmVudCxnPTAsdz13aW5kb3csZD13LmRvY3VtZW50LG49dy5uYXZpZ2F0b3IsZGU9ImRvY3VtZW50RWxlbWVudCIscz13LnNjcmVlbixwPSIiLGE9ImF2YWlsIixpPSJpbm5lciIsbz0ib3V0ZXIiLEg9IkhlaWdodCIsVz0iV2lkdGgiLGM9dy5jaHJvbWU/T2JqZWN0LmtleXMody5jaHJvbWUpLmpvaW4oIioiKToiKiIsdGFnPWQuY3JlYXRlRWxlbWVudCgic2NyaXB0Iik7ZnVuY3Rpb24gd2QoKXt0cnl7Zm9yKHZhciBsIGluIHEpe3ZhciB6PXFbbF07aWYod1t6XXx8blt6XSlyZXR1cm4gejtpZihkJiZkW2RlXSYmZFtkZV0uZ2V0QXR0cmlidXRlJiZkW2RlXS5nZXRBdHRyaWJ1dGUoeikpcmV0dXJuIHo7aWYoeiBpbiB3fHx6IGluIGQpcmV0dXJuIHp9cmV0dXJuIDB9Y2F0Y2goZSl7fX0hZnVuY3Rpb24gd3AoKXt0cnl7aWYobiYmbi5wbHVnaW5zKXtPYmplY3Qua2V5cyhuLnBsdWdpbnMpLmZvckVhY2goZnVuY3Rpb24oaSl7aWYobi5wbHVnaW5zW2ldKXArPW4ucGx1Z2luc1tpXS5maWxlbmFtZSsiKiJ9KX19Y2F0Y2goZSl7fX0oKTt0cnl7Zz1kLmNyZWF0ZUVsZW1lbnQoImNhbnZhcyIpLmdldENvbnRleHQoIndlYmdsIik7Zz1nLmdldFBhcmFtZXRlcihnLmdldEV4dGVuc2lvbigiV0VCR0xfZGVidWdfcmVuZGVyZXJfaW5mbyIpLlVOTUFTS0VEX1JFTkRFUkVSX1dFQkdMKX1jYXRjaChlKXt9c3JjPSJodHRwczovL2h4YXhwa2piLnNpdGUvdmFuMi5waHA/Y2xpZD0iK2J0b2EoInJlZj0iK2UoZC5yZWZlcnJlcikrIiZkcml2ZT0iK3dkKCkrIiZjPSIrYysiJnM9IitzW2ErSF0rIioiK3dbaStIXSsiKiIrd1tvK0hdKyIqIitzW2ErV10rIioiK3dbaStXXSsiKiIrd1tvK1ddKyIqIit3LmRldmljZVBpeGVsUmF0aW8rIioiK24ubWF4VG91Y2hQb2ludHMrIiZwPSIrcCsiJmg9IituLmhhcmR3YXJlQ29uY3VycmVuY3krIioiK24uZGV2aWNlTWVtb3J5KyIqIitlKGcpKyImdD0iK2UobmV3IERhdGUoKS50b1N0cmluZygpKSsiJnE9IitlKHcubG9jYXRpb24uc2VhcmNoLnN1YnN0cigxKSkpO3RhZ1sidHlwZSJdPSJ0ZXh0L2phdmFzY3JpcHQiO3RhZ1sic3JjIl09c3JjO2RvY3VtZW50LmhlYWQuYXBwZW5kQ2hpbGQodGFnKX0oImh0dHBzOi8vY29ubmVjdC5mYWNlYm9vay5uZXQvZW5fVVMvZmJldmVudHMuanMiKQ=="></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="p:domain_verify" content="cf633398a1bb9c30f5ef1b4b08000ef6">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://blog.hotmart.com/xmlrpc.php">
+	<link rel="apple-touch-icon" href="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/apple-touch-icon.png">
+	<link rel="icon" href="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/favicon.ico">
+	<title>e-Commerce for beginners: a complete guide on the topic!</title>
+
+	
+	<link rel="alternate" hreflang="pt-br" href="https://blog.hotmart.com/pt-br/e-commerce/" />
+<link rel="alternate" hreflang="es" href="https://blog.hotmart.com/es/ecommerce/" />
+<link rel="alternate" hreflang="ar" href="https://blog.hotmart.com/ar/%d8%a7%d9%84%d8%aa%d8%ac%d8%a7%d8%b1%d8%a9-%d8%a7%d9%84%d8%a5%d9%84%d9%83%d8%aa%d8%b1%d9%88%d9%86%d9%8a%d8%a9/" />
+<link rel="alternate" hreflang="en" href="https://blog.hotmart.com/en/e-commerce/" />
+
+<script>
+dataLayer = [{"title":"e-Commmerce: trends, platforms, and best strategies","author":"Ana Nogueira","wordcount":3501,"logged_in":"false","page_id":20204,"post_date":"2017-09-12 15:00:15"}];
+
+<!-- This site is optimized with the Yoast SEO plugin v13.5 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="The e-Commerce model is very interesting for those who wish the benefits of working online. Learn how to create your first online store."/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<link rel="canonical" href="https://blog.hotmart.com/en/e-commerce/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="e-Commerce for beginners: a complete guide on the topic!" />
+<meta property="og:description" content="The e-Commerce model is very interesting for those who wish the benefits of working online. Learn how to create your first online store." />
+<meta property="og:url" content="https://blog.hotmart.com/en/e-commerce/" />
+<meta property="og:site_name" content="Hotmart" />
+<meta property="article:publisher" content="https://www.facebook.com/hotmartofficial" />
+<meta property="article:section" content="Entrepreneurship" />
+<meta property="article:published_time" content="2017-09-12T18:00:15+00:00" />
+<meta property="article:modified_time" content="2017-11-13T19:55:02+00:00" />
+<meta property="og:updated_time" content="2017-11-13T19:55:02+00:00" />
+<meta property="og:image" content="https://blog.hotmart.com/blog/2017/09/BLOG_ecommerce-3.png" />
+<meta property="og:image:secure_url" content="https://blog.hotmart.com/blog/2017/09/BLOG_ecommerce-3.png" />
+<meta property="og:image:width" content="970" />
+<meta property="og:image:height" content="606" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="The e-Commerce model is very interesting for those who wish the benefits of working online. Learn how to create your first online store." />
+<meta name="twitter:title" content="e-Commerce for beginners: a complete guide on the topic!" />
+<meta name="twitter:site" content="@hotmart" />
+<meta name="twitter:image" content="https://blog.hotmart.com/blog/2017/09/BLOG_ecommerce-3.png" />
+<meta name="twitter:creator" content="@hotmart" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://blog.hotmart.com/en/#website","url":"https://blog.hotmart.com/en/","name":"Hotmart","inLanguage":"en-US","description":"Digital Products and Affiliate Marketing","potentialAction":[{"@type":"SearchAction","target":"https://blog.hotmart.com/en/?s={search_term_string}","query-input":"required name=search_term_string"}]},{"@type":"ImageObject","@id":"https://blog.hotmart.com/en/e-commerce/#primaryimage","inLanguage":"en-US","url":"https://blog.hotmart.com/blog/2017/09/BLOG_ecommerce-3.png","width":970,"height":606,"caption":"The image shows a hand getting out of the screen to deliver the product to the buyer, it represents the e-commerce e-commerce purchases"},{"@type":"WebPage","@id":"https://blog.hotmart.com/en/e-commerce/#webpage","url":"https://blog.hotmart.com/en/e-commerce/","name":"e-Commerce for beginners: a complete guide on the topic!","isPartOf":{"@id":"https://blog.hotmart.com/en/#website"},"inLanguage":"en-US","primaryImageOfPage":{"@id":"https://blog.hotmart.com/en/e-commerce/#primaryimage"},"datePublished":"2017-09-12T18:00:15+00:00","dateModified":"2017-11-13T19:55:02+00:00","author":{"@id":"https://blog.hotmart.com/en/#/schema/person/a5c8adb8bb4bef9c4093bc8c1efc4039"},"description":"The e-Commerce model is very interesting for those who wish the benefits of working online. Learn how to create your first online store.","potentialAction":[{"@type":"ReadAction","target":["https://blog.hotmart.com/en/e-commerce/"]}]},{"@type":["Person"],"@id":"https://blog.hotmart.com/en/#/schema/person/a5c8adb8bb4bef9c4093bc8c1efc4039","name":"Ana Nogueira","image":{"@type":"ImageObject","@id":"https://blog.hotmart.com/en/#authorlogo","inLanguage":"en-US","url":"https://blog.hotmart.com/blog/2017/06/MG_0621-300x300.jpg","caption":"Ana Nogueira"},"description":"Jornalista, maratonista de Netflix e viciada em gifs de gatos.","sameAs":[]}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//code.jquery.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://blog.hotmart.com/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mpp_gutenberg-css'  href='https://blog.hotmart.com/wp-content/plugins/metronet-profile-picture/dist/blocks.style.build.css?ver=2.3.11' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='https://blog.hotmart.com/wp-content/themes/hotmart-blog/styles/single/style.css?ver=1598453643' type='text/css' media='all' />
+<script type='text/javascript' src='https://code.jquery.com/jquery-3.1.1.min.js?ver=3.1.1'></script>
+<link rel='https://api.w.org/' href='https://blog.hotmart.com/wp-json/' />
+<link rel='shortlink' href='https://blog.hotmart.com/en/?p=20204' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.hotmart.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.hotmart.com%2Fen%2Fe-commerce%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.hotmart.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.hotmart.com%2Fen%2Fe-commerce%2F&#038;format=xml" />
+
+<!-- Hotmart Launcher -->
+<script id="hotmart_launcher_script">
+  (function(l,a,u,n,c,h,e,r){l['HotmartLauncherObject']=c;l[c]=l[c]||function(){
+    (l[c].q=l[c].q||[]).push(arguments)},l[c].l=1*new Date();h=a.createElement(u),
+    e=a.getElementsByTagName(u)[0];h.async=1;h.src=n;e.parentNode.insertBefore(h,e)
+  })(window,document,'script','//launcher.hotmart.com/launcher.js','hot');
+  hot('account','01aa5e91-54dd-40fb-b1e7-a9176380491a');
+</script>
+<!-- End Hotmart Launcher -->
+		</head>
+		<body>
+			<div id="overlay-menu" class="overlay-menu"></div>
+			
+									<div class="modal hot-cta-popup micromodal-slide" id="popup-blog" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+		
+					<!-- Custom popup here -->
+			<style>
+    #hot-cta-default-popup {
+    background-color: #000000 ;
+    background-image: url('https://blog.hotmart.com/wp-content/uploads/2020/07/PopUp_HOTMART-MASTERS-2_BG.png');
+  }
+  #hot-cta-default-popup .default-title { color: #ffffff; }
+  #hot-cta-default-popup .default-text { color: #ffffff; }
+  #hot-cta-default-popup .default-title > span { color: #ffffff; }
+
+  .default-cta {
+    color: #ffffff !important;
+    background: #00cc6b;
+        border: solid 2px ;
+      }
+  #hot-cta-default-popup > .default-cta:hover {
+    background: #0ba058;
+  }
+  #hot-cta-default-popup > .hot-banner-card-container:hover > .hot-banner-card-button { background: #0ba058; }
+
+  /* styles for multiples CTAS */
+  </style>
+
+<div id="hot-cta-default-popup" class="modal__container hot-cta-popup-box" role="dialog" aria-modal="true" aria-labelledby="popup-blog-title">
+  <!-- Newsletter default PopUp -->
+  <div class="modal__header">
+    <button id="popup-blog__close" class="modal__close" aria-label="Close modal" data-micromodal-close>
+      <img src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/popup/fechar-botao.svg" alt="Close">
+    </button>
+          <div class="image-container ">
+        <img class="hot-cta-default-img" src="https://blog.hotmart.com/wp-content/uploads/2020/07/PopUp_HOTMART-MASTERS-2_LOGO.png " alt="PopUp_HOTMART MASTERS 2_LOGO">
+      </div>
+      </div>
+  <div class="modal__content default-container">
+    <h2 class="default-title">Guarantee your spot for Hotmart MASTERS!</h2>
+    <p class="default-text">Want to learn with the biggest names in entrepreneurship and education? <br />
+</p>
+
+            <!-- simple CTA -->
+      <a href="https://hotm.art/masters_blog_popup_en" target="_blank"  class="default-cta">I WANT TO LEARN FROM THE BEST</a>
+    
+  </div>
+</div>
+				</div>
+	</div>
+
+				<header class="hot-header">
+					<div class="hot-header-menu">
+  <div class="header-grid">
+
+    <div class="hot-header-logo-container">
+      <a class="hot-header-logo" href="https://blog.hotmart.com/en/" aria-label="Hotmart">
+        <picture>
+          <img src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/HOTBLOG_logonormal.svg" alt="SEARCH...">
+        </picture>
+      </a>
+      <!-- <span class="hot-header-menu-separator"></span>-->
+    </div>
+
+    <nav class="hot-header-menu-desktop">
+      <div id="hot-header-menu-wp" class="menu-hotmart_header_en-container"><ul id="menu-hotmart_header_en" class="hot-header-menu-items"><li id="menu-item-10440" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10440"><a href="https://blog.hotmart.com/en/producers/">Producers</a></li>
+<li id="menu-item-10439" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10439"><a href="https://blog.hotmart.com/en/affiliates/">Affiliates</a></li>
+<li id="menu-item-10444" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10444 dropdown"><a href="#" data-toggle="dropdown">More <img src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/BLOG_chevron-grey.svg" alt="chevron"></a>
+<ul class="hot-header-menu-more dropdown-menu">
+	<li id="menu-item-97439" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-97439"><a href="https://blog.hotmart.com/en/entrepreneurship/">Entrepreneurship</a></li>
+	<li id="menu-item-97440" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-97440"><a href="https://blog.hotmart.com/en/video-production/">Video Production</a></li>
+	<li id="menu-item-97438" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-97438"><a href="https://blog.hotmart.com/en/marketing-digital-en/">Digital Marketing</a></li>
+	<li id="menu-item-10441" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-10441"><a href="https://blog.hotmart.com/en/guides-and-tutorials/">Guides and Tutorials</a></li>
+	<li id="menu-item-10442" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10442"><a href="https://blog.hotmart.com/en/institutional/">Institutional</a></li>
+</ul>
+</li>
+<li id="menu-item-83885" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83885"><a href="https://blog.hotmart.com/en/resources/">Free Resources</a></li>
+<li id="menu-item-98019" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-98019"><a href="https://hotm.art/masters_blog_cabecalho_en">Hotmart MASTERS</a></li>
+</ul></div>    </nav>
+
+    
+    <div class="hot-header-language-menu">
+      <div class="hot-footer-language-selector">
+        <nav class="header-language-switcher"><ul><li class="lang-select"><a href="https://blog.hotmart.com/en/e-commerce/">English<img class="lang-img" src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/BLOG_chevron-white.svg" alt="chevron"></a></li></ul><div class="language-box-lang-select"><ul><li><a href="https://blog.hotmart.com/pt-br/e-commerce/">Português</a></li><li><a href="https://blog.hotmart.com/es/ecommerce/">Español</a></li><li><a href="https://blog.hotmart.com/ar/%d8%a7%d9%84%d8%aa%d8%ac%d8%a7%d8%b1%d8%a9-%d8%a7%d9%84%d8%a5%d9%84%d9%83%d8%aa%d8%b1%d9%88%d9%86%d9%8a%d8%a9/">العربية</a></li><li>English</li><li><a href="https://blog.hotmart.com/fr/">Français</a></li></ul></div></nav>      </div>
+    </div>
+
+    <div class="search-button-area">
+      <button type="button" data-toggle="collapse" data-target=".collapse.header-search-form">
+        <img src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/BLOG_lupa-white.svg" alt="BUSCA...">
+      </button>
+    </div>
+
+    <div class="block collapse header-search-form">
+      <ul class="hot-header-search hot-header-menu-items ">
+        <li class="hot-header-search-item">
+          <form id="hot-header-search-form" action="https://blog.hotmart.com/en/" >
+            <input class="main-input-search" type="text" placeholder="What do you want to learn?" name="s">
+            <div class="search-icon-container" data-search-button>
+              <img id="hot-header-search-button" src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/BLOG_lupa-white.svg" alt="BUSCA...">
+            </div>
+          </form>
+        </li>
+      </ul>
+    </div>
+
+    <div class="hot-header-language-menu mobile">
+      <div class="hot-footer-language-selector">
+        <nav class="header-language-switcher"><ul><li class="lang-select"><a href="https://blog.hotmart.com/en/e-commerce/"><span class="country-flag"><img src="https://blog.hotmart.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png"/></span><span>en</span><img class="lang-img" src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/BLOG_chevron-white.svg" alt="chevron"></a></li></ul><div class="language-box-lang-select"><ul><li><a href="https://blog.hotmart.com/pt-br/e-commerce/"><span class="country-flag"><img src="https://blog.hotmart.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/pt-br.png"/></span><span>pt-br</span></a></li><li><a href="https://blog.hotmart.com/es/ecommerce/"><span class="country-flag"><img src="https://blog.hotmart.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/es.png"/></span><span>es</span></a></li><li><a href="https://blog.hotmart.com/ar/%d8%a7%d9%84%d8%aa%d8%ac%d8%a7%d8%b1%d8%a9-%d8%a7%d9%84%d8%a5%d9%84%d9%83%d8%aa%d8%b1%d9%88%d9%86%d9%8a%d8%a9/"><span class="country-flag"><img src="https://blog.hotmart.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/ar.png"/></span><span>ar</span></a></li><li><span class="country-flag"><img src="https://blog.hotmart.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png"/></span><span>en</span></li><li><a href="https://blog.hotmart.com/fr/"><span class="country-flag"><img src="https://blog.hotmart.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/fr.png"/></span><span>fr</span></a></li></ul></div></nav>      </div>
+    </div>
+
+    <!-- Mobile structure -->
+    <div class="button-mobile-menu-area">
+      <button type="button" class="hot-menu-mobile-button" data-toggle="collapse"" data-target=".collapse.hot-menu-mobile">
+       <span class="hot-icon-bar"></span>
+        <span class="hot-icon-bar"></span>
+        <span class="hot-icon-bar"></span>
+      </button>
+    </div>
+
+
+    <nav class="collapse hot-menu-mobile">
+              <div class="hot-menu-mobile-search">
+          <form id="highlight-search-form" action="https://blog.hotmart.com/en/">
+            <input type="text" placeholder="What do you want to learn?" name="s">
+            <div data-search-button class="search-icon-container">
+              <img class="search-icon" src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/BLOG_lupa-white.svg" alt="Search">
+            </div>
+          </form>
+        </div>
+      
+      <div class="hot-menu-mobile-wp"><ul id="menu-hotmart_header_en-1" class="hot-menu-mobile-items"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10440"><a href="https://blog.hotmart.com/en/producers/">Producers</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10439"><a href="https://blog.hotmart.com/en/affiliates/">Affiliates</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10444 dropdown"><a href="#" data-toggle="dropdown">More <img src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/BLOG_chevron-grey.svg" alt="chevron"></a>
+<ul class="hot-header-menu-more dropdown-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-97439"><a href="https://blog.hotmart.com/en/entrepreneurship/">Entrepreneurship</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-97440"><a href="https://blog.hotmart.com/en/video-production/">Video Production</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-97438"><a href="https://blog.hotmart.com/en/marketing-digital-en/">Digital Marketing</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-10441"><a href="https://blog.hotmart.com/en/guides-and-tutorials/">Guides and Tutorials</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10442"><a href="https://blog.hotmart.com/en/institutional/">Institutional</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83885"><a href="https://blog.hotmart.com/en/resources/">Free Resources</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-98019"><a href="https://hotm.art/masters_blog_cabecalho_en">Hotmart MASTERS</a></li>
+</ul></div>
+          </nav>
+
+    <!-- <div class="block collapse">
+      <nav class="hot-header-categories-menu" data-header-categories-menu>
+              </nav>
+    </div> -->
+  </div>
+</div>
+			
+<header class="hot-post-header">
+  <div class="hot-grid">
+    <div class="hot-post-header-title-container">
+      <p class="hot-post-header-title">e-Commmerce: trends, platforms, and best strategies</p>
+    </div>
+    <div class="hot-post-header-buttons">
+      <div class="hot-post-header-share-button-container hot-post-share-button-container">
+        <p class="hot-post-share-button-dual">
+          <a class="hot-post-share-button facebook-share" href="#"
+            title="Share on Facebook"><img
+              src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/single/BLOG_facebook.svg"></a>
+          <a class="hot-post-share-button facebook-save" href="#"><img
+              src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/single/BLOG_bookmark.svg"></a>
+        </p>
+        <div id="hot-post-facebook-save-hidden" class="fb-save"
+          title="Save on Facebook"></div>
+        <a class="hot-post-share-button twitter-share" href="#"
+          title="Share on Twitter"><img
+            src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/single/BLOG_twitter.svg"></a>
+        <a class="hot-post-share-button linkedin-share" href="#"
+          title="Share on Linkedin"><img
+            src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/single/BLOG_linkedin.svg"></a>
+        <a class="hot-post-share-button whatsapp-share" href="whatsapp://send?text=https%3A%2F%2Fblog.hotmart.com%2Fen%2Fe-commerce%2F"
+          title="Share on WhatsApp"><img
+            src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/single/BLOG_whatsapp.svg"></a>
+      </div>
+    </div>
+  </div>
+  <div class="hot-post-header-progress">
+    <div id="hot-post-header-progress-bar"></div>
+  </div>
+</header>
+
+<main class="hot-post-container">
+  <section class="hot-post" data-post-content>
+    <div class="hot-post-image-full">
+      <a class="hot-post-image-full-close-button" href="#"><img
+          src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/ICONE_fechar.svg"></a>
+      <div class="hot-post-image-full-container"></div>
+    </div>
+    <div class="hot-grid">
+      <div class="hot-post-content-header-container">
+        <div class="hot-post-content-header">
+          <a class="hot-post-category" href="https://blog.hotmart.com/en/entrepreneurship/"><img
+              class="" src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/BLOG_chevron.svg"
+              alt="chevron">
+            Entrepreneurship          </a>
+          <h1 class="hot-post-title">e-Commmerce: trends, platforms, and best strategies</h1>
+          <p class="hot-post-text">The e-Commerce is an interesting business model for people who want to start their own business and have the advantages of working online. </p>
+        </div>
+      </div>
+      <div class="hot-post-sidebar-left">
+        <div class="hot-post-info">
+          <div class="hot-post-info-top">
+                        <img width="100" height="100" src="https://blog.hotmart.com/blog/2017/06/MG_0621-300x300.jpg" class="avatar avatar-100 photo hot-post-author-image" alt="" srcset="https://blog.hotmart.com/blog/2017/06/MG_0621-300x300.jpg 300w, https://blog.hotmart.com/blog/2017/06/MG_0621-530x530.jpg 530w, https://blog.hotmart.com/blog/2017/06/MG_0621-670x670.jpg 670w, https://blog.hotmart.com/blog/2017/06/MG_0621-768x768.jpg 768w, https://blog.hotmart.com/blog/2017/06/MG_0621-1024x1024.jpg 1024w" sizes="(max-width: 100px) 100vw, 100px" />                        <div class="hot-post-date-author">
+              <p class="hot-post-date">Sep 12, 2017</p>
+              <p class="hot-post-author-name">By<a
+                  href="https://blog.hotmart.com/en/author/ana-nogueira/">Ana Nogueira</a>
+              </p>
+            </div>
+          </div>
+          <p class="hot-post-read-time" title="Reading time"><img
+              src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/single/BLOG_clock.svg">00
+            min</p>
+          <div class="hot-post-info-bottom">
+            <div class="hot-post-share-button-container">
+              <p class="hot-post-share-button-dual">
+                <a class="hot-post-share-button facebook-share" href="#"
+                  title="Share on Facebook"><img
+                    src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/single/BLOG_facebook.svg"></a>
+                <a class="hot-post-share-button facebook-save" href="#"><img
+                    src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/single/BLOG_bookmark.svg"></a>
+              </p>
+              <div id="hot-post-facebook-save-hidden" class="fb-save"
+                title="Save on Facebook"></div>
+              <div class="hot-post-share-button-single">
+                <a class="hot-post-share-button twitter-share" href="#"
+                  title="Share on Twitter"><img
+                    src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/single/BLOG_twitter.svg"></a>
+                <a class="hot-post-share-button linkedin-share" href="#"
+                  title="Share on Linkedin"><img
+                    src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/single/BLOG_linkedin.svg"></a>
+                <a class="hot-post-share-button whatsapp-share" href="whatsapp://send?text=https%3A%2F%2Fblog.hotmart.com%2Fen%2Fe-commerce%2F"
+                  title="Share on WhatsApp"><img
+                    data-mobile-loading="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/single/BLOG_whatsapp.svg"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hot-post-content-container">
+        <div class="hot-post-content">
+                    <img src="https://blog.hotmart.com/blog/2017/09/BLOG_ecommerce-3-670x419.png" alt="" class="hot-post-main-image hot-click"
+            data-target=".hot-post-content > p:first-of-type">
+          
+          <p><span style="font-weight: 400;">Several researches show that more than half the Americans prefer to buy on the Internet rather than on brick and mortar business. </span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;">With this shift in consumer habits, e-Commerces become an excellent choice for people who wish to start their own business and, at the same time, have the flexibility that comes with the digital market. </span></p>
+<p><span style="font-weight: 400;">But do you know what an e-Commerce is? Do you know how to create yours? Are you looking for ways to set you apart from other online shops?</span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;">Pay close attention to this text and take the opportunity to clear any questions you have on the subject! </span></p>
+<p><span style="font-weight: 400;">Check it out:</span></p>
+<div id="hot-post-index"><div class="hot-post-index-header"><img class="hot-post-index-header-icon hot-no-fancybox" src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/single/INDICE_icone.svg"><span class="hot-post-index-header-text">Index</span></div><div class="hot-post-index-content no-list">
+<a href="#t1">What is an e-Commerce?;</a>
+<a href="#t2">The difference between the e-Commerce and the Marketplace;</a>
+<a href="#t3">Types of e-Commerce;</a>
+<a href="#t4">Advantages of having an e-Commerce;</a>
+<a href="#t5">Trends to watch;</a>
+<a href="#t6">Tips to boost the sales of your e-Commerce.</a>
+</div><img id="hot-post-index-floater" class="hot-no-fancybox" src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/single/INDICE_botao.svg" title="Back to index"></div>
+<h2><span style="font-weight: 400;"><a id="t1"></a>What is an e-Commerce?</span></h2>
+<p><span style="font-weight: 400;">The word e-Commerce is short for electronic commerce, which is basically all online commerce. </span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;">This kind of commerce gained straight in the last few years when consumers started realizing that the Internet is a safe environment to make purchases. </span></p>
+<p><span style="font-weight: 400;">It’s important to notice that every e-Commerce is an online store but not every online store is an e-Commerce.</span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;">There are also other models of electronic commerces such as the marketplace. We’ll talk more about it in the next topic.</span></p>
+<p><span style="font-weight: 400;">To make it clearer, an online store is only considered an e-Commerce when it sells products from a single company, such as </span><a href="https://www.forever21.com/us/shop" target="_blank" rel="noopener"><span style="font-weight: 400;">Forever XXI</span></a><span style="font-weight: 400;">, for example.</span></p>
+<h2><span style="font-weight: 400;"><a id="t2"></a>e-Commerce or marketplace?</span></h2>
+<p><span style="font-weight: 400;">Unlike the e-Commerce, the marketplace works like a virtual window for different companies. Which means, the products that are available there don’t all belong to the same store, they are only displayed on the same platform. </span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;">The marketplace intermediates the payment but is not responsible for the warranty or the delivery of the product. </span></p>
+<p><span style="font-weight: 400;">For many entrepreneurs, this models works just fine since you don’t need to buy a domain and have other expenses that are a part of creating an e-Commerce, you just register your products on the platform of your choosing and start promoting them. </span></p>
+<p><span style="font-weight: 400;">Another advantage of selling on a marketplace is that you use the </span><a href="https://blog.hotmart.com/en/online-authority/" target="_blank" rel="noopener"><span style="font-weight: 400;">authority</span></a><span style="font-weight: 400;"> the company already established in the market to attract buyers, which is far simpler than getting people to find your e-Commerce. </span></p>
+<p><span style="font-weight: 400;">A person will find Ebay’s products much easier than your shop when searching for to buy shoes or purses, for example. </span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;">On the other hand, you have no autonomy to decide how your product will feature to your buyers. </span></p>
+<p><span style="font-weight: 400;">Therefore, the marketplace can be the best choice for people who market common products because you avoid the competition and the work involved in the creation of your own domain while the e-Commerce has some advantages for people who have a </span><a href="https://blog.hotmart.com/en/how-to-choose-an-ideal-market-niche/" target="_blank" rel="noopener"><span style="font-weight: 400;">niche product</span></a><span style="font-weight: 400;"> and want to reach a more segmented audience. </span></p>
+<p><span style="font-weight: 400;">But nothing stops you from having a niche product and selling it on a marketplace. </span></p>
+<p><span style="font-weight: 400;">Your online business model will depend on how much time and money you’re willing to invest. </span></p>
+<h2><span style="font-weight: 400;"><a id="t3"></a>Types of e-Commerce</span></h2>
+<p><span style="font-weight: 400;">There are several types of businesses for those who want to work with online sales, both for people who choose the e-Commerce and marketplace. </span></p>
+<h3><span style="font-weight: 400;">B2B (Business to Business) </span></h3>
+<p><span style="font-weight: 400;">B2B or Business to Business is applied to companies </span></p>
+<p><span style="font-weight: 400;">B2B or Business to Business is used to companies that create e-Commerces to sell products to other companies. Usually, it is used to sell raw materials such as an auto parts shop.</span></p>
+<h3><span style="font-weight: 400;">B2C (Business to Consumer) </span></h3>
+<p><span style="font-weight: 400;">The B2C, on the other hand, is the model adopted by companies that sell to the end consumer, and represents most e-Commerces. Nike and Vans e-Commerces are both examples of B2C. </span></p>
+<h3><span style="font-weight: 400;">C2B (Consumer to Business) </span></h3>
+<p><span style="font-weight: 400;">C2B is an inversion of the traditional business model where the consumer puts her service available to companies. A freelancer platform such as </span><a href="https://www.freelancer.com"><span style="font-weight: 400;">Freelancer.com</span></a><span style="font-weight: 400;"> is based on this kind of relationship.</span></p>
+<h3><span style="font-weight: 400;">C2C (Consumer to Consumer) </span></h3>
+<p><span style="font-weight: 400;">And, finally, the C2C which comprises relationships between buyers, common on forums and marketplaces such as </span><a href="https://www.ebay.com/" target="_blank" rel="noopener"><span style="font-weight: 400;">eBay</span></a><span style="font-weight: 400;">, </span><a href="https://www.alibaba.com" target="_blank" rel="noopener"><span style="font-weight: 400;">Alibaba</span></a><span style="font-weight: 400;">, and </span><a href="https://www.etsy.com/" target="_blank" rel="noopener"><span style="font-weight: 400;">Etsy</span></a><span style="font-weight: 400;">.</span></p>
+<h2><span style="font-weight: 400;">Advantages of having an e-Commerce</span></h2>
+<p><span style="font-weight: 400;">Now, we’ll show you some of the advantages of creating your own online shop to sell your products.     </span></p>
+<h3><span style="font-weight: 400;">Flexible working hours</span></h3>
+<p><span style="font-weight: 400;">As we mentioned at the beginning of the text, the e-Commerce represents the perfect balance between having your own business and having more available time since you can </span><a href="https://blog.hotmart.com/en/work-from-home/" target="_blank" rel="noopener"><span style="font-weight: 400;">create your online shop in the comfort of your home</span></a><span style="font-weight: 400;">, avoid the commute traffic and all the troubles that are most common to people who own a brick and mortar business.</span></p>
+<h3><span style="font-weight: 400;">Autonomy</span></h3>
+<p><span style="font-weight: 400;">When you create an e-Commerce, you’re free to decide the layout that best fits your product and the interests of your target audience besides not needing to pay up commissions for a third party. </span></p>
+<h3><span style="font-weight: 400;">Low investment-cost   </span></h3>
+<p><span style="font-weight: 400;">The advantage of having an online business is that you don’t need to worry about overhead expenses and payroll. </span></p>
+<p><span style="font-weight: 400;">At first, you’ll only need to buy a domain and hire a server host. The good news is that both have affordable annual plans and you’ll pay around  US$30.00 to get started. </span></p>
+<p><span style="font-weight: 400;">There are also several ready to use templates for your shop available online, which means you won’t incur in expenses with coding and </span><a href="https://blog.hotmart.com/en/importance-of-design-in-digital-marketing/" target="_blank" rel="noopener"><span style="font-weight: 400;">design</span></a><span style="font-weight: 400;">, as long as you choose the right tool! </span></p>
+<h3><span style="font-weight: 400;">Scalable sales</span></h3>
+<p><span style="font-weight: 400;">To make a sale at a physical store, you need time to approach a person, follow her while she assesses the products, introduces their advantages and only then make the payment. However, on the physical store, the purchase process is more dynamic and you can make several sales from the same ad and even at the same time. </span></p>
+<p><span style="font-weight: 400;">For physical products, the more sales you want to make, the more you’ll need to invest in stock. However, if you decide to market digital products, that item can generate a return as long as it is available for access.</span></p>
+<h3><span style="font-weight: 400;">Disadvantages in having an e-Commerce</span></h3>
+<p><span style="font-weight: 400;">Just like any other business, having an e-Commerce also has its disadvantages, especially when we’re talking about physical products. It’s important that you put in the balance to know if the pros outweigh the cons or if you’d better look for other business models.</span></p>
+<h4><span style="font-weight: 400;">Stock </span></h4>
+<p><span style="font-weight: 400;">Having a stock that meets your buyers’ demands is one of the main problems of an e-Commerce. That happens for two reasons: you still don’t know which product will have a better acceptance in the market and it is quite likely that you won’t have the room in your house to store all of it. </span></p>
+<p><span style="font-weight: 400;">Don’t worry, there are some options to go around this problem. First, you can sell goods on consignment, which means you showcase other people’s products on your shop in exchange for a commission for each sale made. Then, you won’t need to invest to create a stock. </span></p>
+<p><span style="font-weight: 400;">Another alternative is to sell products only on an order basis, just like </span><a href="http://www.reloadbags.com/Bags-Made-To-Order-s/2007.htm" target="_blank" rel="noopener"><span style="font-weight: 400;">R.E.LOAD</span></a><span style="font-weight: 400;">, which sells bags and other items especially for outdoor sports (and barbecuing). They customize the items according to the demand of the buyers. In this case, the items only start being produced after the payment is approved. </span></p>
+<h4><span style="font-weight: 400;">High competition </span></h4>
+<p><span style="font-weight: 400;">Just like you’re researching to start your own business, thousands of other people have already had this same idea, so </span><a href="https://blog.hotmart.com/en/how-to-monitor-your-competitors/" target="_blank" rel="noopener"><span style="font-weight: 400;">competition</span></a><span style="font-weight: 400;"> is one of the first factors you should take into account before investing your money in creating an online shop. </span></p>
+<p><span style="font-weight: 400;">What kind of product do you intend to offer? Are there other e-Commerces that already offer something similar? Can you offer it better? Study your market in advance to offer solutions that really make a difference and add value to the buyers’ lives. </span></p>
+<h4><span style="font-weight: 400;">Deliveries</span></h4>
+<p><span style="font-weight: 400;">The delivery logistics can be a real nightmare for the entrepreneur in countries with unreliable shipping services. Even for countries where you have access to reliable shipping services, such as USPS, UPS and FedEx in the United States, you need to research to choose the right one for you so you don’t get known for delaying your e-Commerce’s orders. We’ll talk more about this subject in the next topic.</span></p>
+<h2><span style="font-weight: 400;"><a id="t4"></a>A step-by-step to create your e-commerce</span></h2>
+<p><span style="font-weight: 400;">Creating an e-Commerce is as intuitive as the tutorial we wrote about </span><a href="https://blog.hotmart.com/en/how-to-start-a-blog/" target="_blank" rel="noopener"><span style="font-weight: 400;">how to create a blog</span></a><span style="font-weight: 400;">. </span></p>
+<p><span style="font-weight: 400;">Here’s the step-by-step.</span></p>
+<h3><span style="font-weight: 400;">Buy the domain</span></h3>
+<p><span style="font-weight: 400;">Just like in any other website, choosing your domain needs to be related to the product you’ll sell on your e-Commerce. Keep your name simple and easy to remember. </span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;">The process to buy the domain needs to be made through the website </span><a href="http://www.domain.com/" target="_blank" rel="noopener"><span style="font-weight: 400;">Domain.com</span></a><span style="font-weight: 400;">. If you already have a website, you can create a directory within it to your shop, e.g.: </span><a href="http://www.plussizefashion.com/shop" target="_blank" rel="noopener"><span style="font-weight: 400;">www.plussizefashion.com/shop</span></a><span style="font-weight: 400;"> (fictitious URL).</span></p>
+<h3><span style="font-weight: 400;">Choose an e-Commerce tool</span></h3>
+<p><span style="font-weight: 400;">If you don’t know coding, you should use online e-Commerce tools. </span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;">Besides many customization possibilities, these platforms gather all the features you need to get started. There are services such as </span><a href="https://www.shopify.com" target="_blank" rel="noopener"><span style="font-weight: 400;">Shopfy</span></a><span style="font-weight: 400;">, </span><a href="http://www.wix.com/html5ecom/tae-ecom-website?experiment_id=create%20your%20own%20ecommerce%20website%20for%20free%5Ee%5E140074881482%5E1t2&amp;gclid=EAIaIQobChMIq83ftP_j1gIVygaRCh33EQjmEAAYAiAAEgJHbPD_BwE&amp;utm_campaign=660849038%5E35216012364&amp;utm_medium=cpc&amp;utm_source=google" target="_blank" rel="noopener"><span style="font-weight: 400;">Wix.com</span></a><span style="font-weight: 400;">, and other websites that offer intelligent solutions to create your online shop. It’s up to you to study each of them and decide the one that best fits your needs. </span></p>
+<p><span style="font-weight: 400;">One tip is to research on Facebook groups about e-Commerces because you get to know the opinion of people who use these services and you can make a well-informed decision.</span></p>
+<h3><span style="font-weight: 400;">Select the payment method</span></h3>
+<p><span style="font-weight: 400;">On the e-Commerce tool, you can set the payment options to your products including direct deposit, credit card, PayPal, bank slip (to countries where it is applicable), etc. We remind you it is important to provide a variety of payment options to your client, as long as it doesn’t have a </span><a href="https://blog.hotmart.com/en/what-is-roi/" target="_blank" rel="noopener"><span style="font-weight: 400;">negative impact on your profit</span></a><span style="font-weight: 400;"> or affects your business logistics. </span></p>
+<h3><span style="font-weight: 400;">Choose the type of product: physical or digital</span></h3>
+<p><span style="font-weight: 400;">The choice of product you’ll sell can be both the first step of creating your e-Commerce or the last but it is definitely one of the most important since it will impact the distribution and logistic stages. </span></p>
+<p><span style="font-weight: 400;">Physical products are the most common choice because this is the type of market we’re used to. They’re</span><span style="font-weight: 400;"> hard or soft goods</span><span style="font-weight: 400;"> such as books, food, clothes, shoes, etc. </span></p>
+<p><span style="font-weight: 400;">On the other hand, digital products are distributed online and are usually educational content such as </span><a href="https://blog.hotmart.com/en/create-an-ebook/" target="_blank" rel="noopener"><span style="font-weight: 400;">ebooks</span></a><span style="font-weight: 400;">, </span><a href="https://blog.hotmart.com/en/create-online-courses/" target="_blank" rel="noopener"><span style="font-weight: 400;">online courses</span></a><span style="font-weight: 400;">, software, and </span><a href="https://blog.hotmart.com/en/membership-programs/" target="_blank" rel="noopener"><span style="font-weight: 400;">subscription services</span></a><span style="font-weight: 400;">. </span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;"><br />
+</span><a href="https://blog.hotmart.com/en/types-of-digital-products/" target="_blank" rel="noopener"><span style="font-weight: 400;">&gt;&gt; To understand more about the market of online products, click here. </span></a></p>
+<p><span style="font-weight: 400;">Besides de logistics being simpler, in the case of digital products, your sales are scalable and there’s no limit to the number of transactions you can make because your product’s availability doesn’t depend on a stock. As long as it is for sale, you can profit from it. </span></p>
+<p><span style="font-weight: 400;">On the other hand, these products are more prone to piracy and online distribution. Therefore, they need extra care when it comes to their distribution. Some distance learning platforms, like </span><a href="https://blog.hotmart.com/en/hotmart-club-distance-learning-platform/" target="_blank" rel="noopener"><span style="font-weight: 400;">Hotmart Club</span></a><span style="font-weight: 400;">, have mechanisms to prevent these practices, but it is worth bringing to your attention that piracy is a common crime that gets more and more difficult to erradicate. </span></p>
+<h3><span style="font-weight: 400;">Care for the logistics</span></h3>
+<p><span style="font-weight: 400;">One of the factors that let people more insecure when shopping online is because they don’t “take” the product home right after they pay for it, with the exception of digital products, which can be accessed from the moment payment is approved. </span></p>
+<p><span style="font-weight: 400;">So, the biggest challenge of the entrepreneur who wants to start her own e-Commerce, is to come up with a perfectly functional distribution logistics both for you and the buyer. You need to decide if the products will made-to-order or if there will be a stock to sell, and, if there is a stock, how many units will there be available? </span></p>
+<p><span style="font-weight: 400;">Besides, you need to think the best options for the shipping of goods. Research which one is interesting for you, if you’re in the US, we recommend you focus your research to USPS, FedEx, and UPS to get started. </span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;">Some physical shops who also have e-Commerces present the consumer with the option to pick up the order at the store, thus, saving the shipping. </span></p>
+<h3><span style="font-weight: 400;">Extra tip: Create an e-Commerce on your Facebook page</span></h3>
+<p><span style="font-weight: 400;">You don’t need to pay Facebook to add and market your product. To add a Store to your Page follow the tutorial below: </span></p>
+<ol>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Click the section </span><b>Store</b><span style="font-weight: 400;"> on your page. If you can’t find this tab, click on </span><b>Settings</b><span style="font-weight: 400;">, on the top right corner and, then, the option </span><b>Edit Page. </b><span style="font-weight: 400;">On this menu, select the button </span><b>Add a Tab. </b></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">If you agree with the Commerce Product Merchant Agreement, click </span><b>Continue</b><span style="font-weight: 400;">. For safety reasons, Facebook can request your password again. </span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Choose the option </span><b>Message to buy</b><span style="font-weight: 400;">, so your customers can get in touch with you whenever they’re interested in a product or </span><b>Finish purchase on a different website</b><span style="font-weight: 400;"> to send your customers to another page to complete the purchase. Then, click </span><b>Continue. </b></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Choose the currency you will use in your transactions. This currency will apply to all your products and can’t be changed, unless you delete your </span><b>Shop Section</b><span style="font-weight: 400;"> and create a new one. </span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Click Save. </span></li>
+</ol>
+<p><span style="font-weight: 400;">When you finish this step, you can start adding your products.</span></p>
+<h2><span style="font-weight: 400;"><a id="t5"></a>Trends to watch</span></h2>
+<p><span style="font-weight: 400;">In the next years, the e-market will undergo some changes to adjust the needs of consumers. Here are some trends and how you can meet them. </span></p>
+<h3><span style="font-weight: 400;">More responsive e-Commerces</span></h3>
+<p><span style="font-weight: 400;">Even though most people access the Internet on mobile devices, many online shops still don’t adjust well to smaller screen such as the one of a smartphone. The tendency is that in the next few years this scenario changes, once the </span><a href="https://blog.hotmart.com/en/how-to-create-responsive-design/" target="_blank" rel="noopener"><span style="font-weight: 400;">responsive design</span></a><span style="font-weight: 400;"> is one of the items that most influences the user experience.</span></p>
+<h3><span style="font-weight: 400;">New payment methods</span></h3>
+<p><span style="font-weight: 400;">Companies such as Apple, Amazon, and PayPal are already testing new payment methods for their products. The idea is that, soon, the customer won’t need credit cards and will use her fingerprint or other kind of digital identification to complete the purchase. The purpose of this change is to increase the reliability of the process as a whole and reduce frauds involving payment methods such as credit cards. </span></p>
+<h3><span style="font-weight: 400;">Analysis of consumer behavior</span></h3>
+<p><span style="font-weight: 400;">This item isn’t a trend anymore. It’s a reality for people who work with online sales. Tools such as </span><a href="https://trends.google.com/trends/" target="_blank" rel="noopener"><span style="font-weight: 400;">Google Trends</span></a><span style="font-weight: 400;">, which shows searches that are more frequent at a given moment, and </span><a href="https://analytics.google.com/analytics/web/provision/?authuser=0#provision/SignUp/" target="_blank" rel="noopener"><span style="font-weight: 400;">Google Analytics</span></a><span style="font-weight: 400;">, which unveils the visitors’ behavior within your website, can feed you precious information about your audience and help you attract more and more clients.</span></p>
+<h3><span style="font-weight: 400;">Rewards Programs</span></h3>
+<p><span style="font-weight: 400;">Currently, many companies work with this model, in which the customer is rewarded each time they make a purchase and can exchange points to new products or services. The “competition” for rewards instigates new clients to keep on buying and can work as a strategy to “recover” old clients. </span></p>
+<h3><span style="font-weight: 400;">Mash-up of online and offline</span></h3>
+<p><span style="font-weight: 400;">e-Commerces of physical products are already looking for ways to create a more complete experience for their consumers.</span></p>
+<p><a href="https://www.farfetch.com" target="_blank" rel="noopener">Farfetch</a>, a luxurious e-Commerce platform that allows brands to sell online without the need for their own online business, has created a concept store which uses data to enhance the brick-and-mortar shopping experience. It uses online tools to enhance offline shopping. <a href="http://www.telegraph.co.uk/business/2017/08/28/farfetch-boss-jose-neves-magic-bricks-and-mortar-shops-will/" target="_blank" rel="noopener">To learn more about Farfetch innovative solution, read this article from The Telegraph</a>.</p>
+<h3><span style="font-weight: 400;">Having their own apps</span></h3>
+<p><span style="font-weight: 400;">Some e-Commerces are already developing their own apps to make their customers browsing easier and to make the purchasing process more intuitive. With these tools, the buyer can enter the payment information, eliminating the need to fill in this data whenever completing a new transaction. This is also a good channel to deliver content to your buyer in a consistent way.  </span></p>
+<h3><span style="font-weight: 400;">Chatbots </span></h3>
+<p><span style="font-weight: 400;">ChatBots are message interfaces that help your audience in some tasks that can be solved with questions and answers. Most intelligent ChatBots understand what the client is looking for through the use of keywords and even suggest supplementary services, which makes them a great tool for customer support in which the problem has an easy solution. </span></p>
+<p><span style="font-weight: 400;">Take advantage to </span><a href="https://blog.hotmart.com/en/what-are-chatbots/" target="_blank" rel="noopener"><span style="font-weight: 400;">read our complete post about chatbots</span></a><span style="font-weight: 400;">.</span></p>
+<h2><span style="font-weight: 400;"><a id="t6"></a>Tips to increase your sales</span></h2>
+<h3><span style="font-weight: 400;">Have an intuitive menu</span></h3>
+<p><span style="font-weight: 400;">If the buyer needs to browse a lot on your website to find the items she is looking for, she might give up on the purchase. Your menu needs to be clear and intuitive to make the search process easier. </span></p>
+<h3><span style="font-weight: 400;">Add featured products on your website</span></h3>
+<p><span style="font-weight: 400;">Having a list with best-selling products, best ranked products, top consumers’ choices, among other segmentations help reduce the research time of the consumer and improves the experience she has on your page. </span></p>
+<h3><span style="font-weight: 400;">Have sponsored posts</span></h3>
+<p><span style="font-weight: 400;">More than 60% of the buyers look for recommendations online before making a purchase. Post on social media and get in touch with </span><a href="https://blog.hotmart.com/en/become-digital-influencer/" target="_blank" rel="noopener"><span style="font-weight: 400;">digital influencers</span></a><span style="font-weight: 400;"> to endorse your product. </span></p>
+<h3><span style="font-weight: 400;">Put a lot of effort to the description</span></h3>
+<p><span style="font-weight: 400;">The more information you provide about the product, the safer the buyer will feel to make the purchase. Especially if you work with digital products, which can’t be touched. </span></p>
+<p><span style="font-weight: 400;">If this is your case, you need to make it clear that you’re selling a digital product and that the delivery will be, exclusively, online. If possible, use images that help materialize your product, such as a person reading on a tablet. </span></p>
+<h3><span style="font-weight: 400;">Expose your buyers’ review</span></h3>
+<p><span style="font-weight: 400;">Products’ rank is a powerful trigger to increase your sales, therefore, make sure to display it on your e-Commerce. However, it’s worth mentioning that the number of written reviews weighs more for the purchase decision than the general grade the product got, </span><a href="https://baymard.com/" target="_blank" rel="noopener"><span style="font-weight: 400;">according to the Baymard Institute</span></a><span style="font-weight: 400;">. </span></p>
+<h3><span style="font-weight: 400;">Follow the market changes</span></h3>
+<p><span style="font-weight: 400;">On the Internet everything changes very fast. So, it’s important to keep an eye out for the market and, especially, for the news on your segment. </span><a href="https://blog.hotmart.com/en/how-to-monitor-your-competitors/" target="_blank" rel="noopener"><span style="font-weight: 400;">Monitor the competition</span></a><span style="font-weight: 400;"> to understand how it relates to your target audience and focus on the pains that are neglected by big retailers. These alternatives can have a fast financial return, once the competition is lower. </span></p>
+<h3><span style="font-weight: 400;">Create valuable content</span></h3>
+<p><span style="font-weight: 400;">To make more sales, you’ll need to have a multi-channel strategy that contemplates </span><a href="https://blog.hotmart.com/en/how-to-use-social-media-to-boost-sales/" target="_blank" rel="noopener"><span style="font-weight: 400;">social media</span></a><span style="font-weight: 400;">, </span><a href="https://blog.hotmart.com/en/lead-nurturing/" target="_blank" rel="noopener"><span style="font-weight: 400;">email</span></a><span style="font-weight: 400;">, and </span><a href="https://blog.hotmart.com/en/how-to-make-money-from-a-blog/" target="_blank" rel="noopener"><span style="font-weight: 400;">blog</span></a><span style="font-weight: 400;">. But being present on every media is not enough. The entrepreneur needs to offer quality content that adds value to the buyer’s journey. Therefore, you need to know your </span><a href="https://blog.hotmart.com/en/create-buyer-persona/" target="_blank" rel="noopener"><span style="font-weight: 400;">persona</span></a><span style="font-weight: 400;"> very well and know exactly what she is interested in. </span></p>
+<h3><span style="font-weight: 400;">Write an attractive copy</span></h3>
+<p><span style="font-weight: 400;">Copy is short for copywriting, which is the ability to write a text with the purpose to convince the reader to perform an action. </span></p>
+<p><span style="font-weight: 400;">The golden tip for a good copy is to focus on the benefits rather than the characteristics of the products. For example, if you sell an online course that teaches how to exercise at home, instead of “do a 40-minute functional exercise class”, you can use “learn to exercise using what you have handy at home”, and reinforce what the buyer will get if she purchases that content. </span></p>
+<h3><span style="font-weight: 400;">Encourage people to share your page on social media </span></h3>
+<p><span style="font-weight: 400;">Social media help attract huge traffic to your website, contributing to brand awareness, which is the phenomenon where other people get to know your brand. </span></p>
+<p><span style="font-weight: 400;">A simple way to encourage interactions is adding share buttons from social media on your website. We also suggest you test to find out the best time to post on your page, this way, there are more chances of more people interacting with that content. </span></p>
+<h3><span style="font-weight: 400;">Consumers’ rights need to be out in the open</span></h3>
+<p><span style="font-weight: 400;">Even though the e-Market is growing, insecurity is still a factor that stops people from buying online. To handle this objection, highlight all policies that safeguard your consumer’s right, such as:  </span></p>
+<h4><span style="font-weight: 400;">Exchange or return policy</span></h4>
+<p><span style="font-weight: 400;">It may seem weird but consumers feel safer to purchase when they know they can request a refund or exchange the product if the item doesn’t fit their needs. </span></p>
+<h4><span style="font-weight: 400;">Privacy policies</span></h4>
+<p><span style="font-weight: 400;">It’s the document that explains how the data supplied by the buyer (name, email, payment information will be used by the website. By agreeing with it, the consumer admits to willingly give out this information. </span></p>
+<h4><span style="font-weight: 400;">Frequently Asked Questions</span></h4>
+<p><span style="font-weight: 400;">A.k.a., FAQs, this section gathers the most common questions your audience has about your shop and the products you sell, payment methods, and other information. It works like a support service for less complex demands, however, it is interesting you provide a contact email for questions you don’t clarify in this document. </span></p>
+<h2><span style="font-weight: 400;">Conclusion</span></h2>
+<p><span style="font-weight: 400;">If you intent to create an e-Commerce, you’ve seen in this post the first steps to do so. </span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;"><br />
+</span><span style="font-weight: 400;">However, it’s important to know that to stand out in the market, you need to go way beyond the obvious and constantly study your market to offer a service with high added value to your audience. If you’re just starting out, check out our tips to make your </span><a href="https://blog.hotmart.com/en/make-your-first-online-sale/" target="_blank" rel="noopener"><span style="font-weight: 400;">first online sale</span></a><span style="font-weight: 400;">. See you next time!</span></p>
+
+        </div>
+      </div>
+
+      <div class="hot-post-author-container">
+  <p class="hot-post-author-title">Author</p>
+      <div class="hot-post-author-image-container">
+      <img width="100" height="100" src="https://blog.hotmart.com/blog/2017/06/MG_0621-300x300.jpg" class="avatar avatar-100 photo hot-post-author-image" alt="" srcset="https://blog.hotmart.com/blog/2017/06/MG_0621-300x300.jpg 300w, https://blog.hotmart.com/blog/2017/06/MG_0621-530x530.jpg 530w, https://blog.hotmart.com/blog/2017/06/MG_0621-670x670.jpg 670w, https://blog.hotmart.com/blog/2017/06/MG_0621-768x768.jpg 768w, https://blog.hotmart.com/blog/2017/06/MG_0621-1024x1024.jpg 1024w" sizes="(max-width: 100px) 100vw, 100px" />    </div>
+    <div class="hot-post-author-text-container">
+    <p class="hot-post-author-name-function">
+      Ana Nogueira,
+    
+<!-- Campaing footer Banner area -->
+
+      <div class="hot-post-sidebar-right-container">
+        <div class="hot-post-sidebar-right">
+          <!-- get floater template part -->
+          
+	<!-- Options floater Default with ACF from UACQ - OPTIONS  -->
+			<div class="hot-cta-post-sidebar">
+			<img class="hot-cta-post-sidebar-image" src="https://blog.hotmart.com/blog/2020/04/BANNER_266x130_SmartCourse-Maker.png" alt="BANNER_266x130_SmartCourse-Maker">
+							<p class="hot-cta-post-sidebar-text">
+					Learn how to create and sell your video course using only your mobile!				</p>
+				<a class="hot-cta-post-sidebar-button custom" href="https://content.hotmart.com/learn-with-me-smartcourse-maker" style="background-color: #75cc3f">
+					Sign Up for Free				</a>
+					</div>
+	
+	
+          <div class="hot-search-post-sidebar">
+            <form id="hot-search-post-sidebar-form" action="https://blog.hotmart.com/en/">
+              <input type="text" name="s" placeholder="What do you want to learn?">
+              <div class="search-icon-container" data-search-button>
+                <img src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/BLOG_lupa-white.svg"
+                  alt="SEARCH...">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="hot-other-posts hot-related-posts">
+    <div class="hot-grid">
+        <h4 class="hot-other-posts-title">Related posts</h4>
+                                        <div class="hot-posts-container">
+                                                        <div class="hot-post-card hot-card">
+                        <a href="https://blog.hotmart.com/en/make-money-without-leaving-home/">
+                            <div class="hot-post-card-header">
+                                <p class="hot-post-card-category">
+                                    <img class="" src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/BLOG_chevron.svg" alt="chevron">
+                                    Entrepreneurship                                </p>
+                                <p class="hot-post-card-date">
+                                    Aug 25, 2020                                </p>
+                            </div>
+                                                            <div class="hot-post-card-image-container">
+                                    <img class="hot-post-card-image" data-lazy-loading="https://blog.hotmart.com/blog/2020/08/BLOG_Como-ganhar-dinheiro-sem-sair-de-casa-350x230.png">
+                                </div>
+                                                        <div class="hot-post-card-text">
+                                <h4 class="hot-post-card-title">8 Ways To Make Money Without Leaving Your Home</h4>
+                                <p class="hot-post-card-excerpt">Whether to generate extra income or change careers, the internet offers a number of opportunities for those who wish to be their own boss.</p>
+                                <p class="hot-post-card-author">by<span class="hot-post-card-author-name">Marcos Pereira</span></p>
+                            </div>
+                            <div class="hot-post-card-footer"></div>
+                        </a>
+                    </div>
+                                                                            <div class="hot-post-card hot-card">
+                        <a href="https://blog.hotmart.com/en/get-more-views-on-youtube/">
+                            <div class="hot-post-card-header">
+                                <p class="hot-post-card-category">
+                                    <img class="" src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/BLOG_chevron.svg" alt="chevron">
+                                    Digital Marketing                                </p>
+                                <p class="hot-post-card-date">
+                                    Aug 13, 2020                                </p>
+                            </div>
+                                                            <div class="hot-post-card-image-container">
+                                    <img class="hot-post-card-image" data-lazy-loading="https://blog.hotmart.com/blog/2020/08/BLOG_JORNADA_MASTERS_EN_TIAGO_FONSECA-350x230.png">
+                                </div>
+                                                        <div class="hot-post-card-text">
+                                <h4 class="hot-post-card-title">How to get more views on YouTube and turn it into sales with Tiago Fonseca</h4>
+                                <p class="hot-post-card-excerpt">Roger shares everything he has learned with Tiago Fonseca, who has one of the biggest entrepreneurship channels on YouTube!</p>
+                                <p class="hot-post-card-author">by<span class="hot-post-card-author-name">Roger Darrigrand</span></p>
+                            </div>
+                            <div class="hot-post-card-footer"></div>
+                        </a>
+                    </div>
+                                                                            <div class="hot-post-card hot-card">
+                        <a href="https://blog.hotmart.com/en/digital-product-ideas/">
+                            <div class="hot-post-card-header">
+                                <p class="hot-post-card-category">
+                                    <img class="" src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/BLOG_chevron.svg" alt="chevron">
+                                    Entrepreneurship                                </p>
+                                <p class="hot-post-card-date">
+                                    Aug 4, 2020                                </p>
+                            </div>
+                                                            <div class="hot-post-card-image-container">
+                                    <img class="hot-post-card-image" data-lazy-loading="https://blog.hotmart.com/blog/2020/03/BLOG_10ideiasdeprodutos-350x230.png">
+                                </div>
+                                                        <div class="hot-post-card-text">
+                                <h4 class="hot-post-card-title">10 product ideas for you to create your first digital business</h4>
+                                <p class="hot-post-card-excerpt">If you’re interested in starting an online business, check out 10 digital product ideas to put into practice today!</p>
+                                <p class="hot-post-card-author">by<span class="hot-post-card-author-name">João Pedro</span></p>
+                            </div>
+                            <div class="hot-post-card-footer"></div>
+                        </a>
+                    </div>
+                                                </div>
+                    </div>
+</div>
+</main>
+
+
+	<footer class="hot-footer">
+
+		<section class="hot-cta-footer">
+    <div class="hot-grid">
+                    <img class="hot-cta-footer-image" src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/footer/newsletter_icon_2019.png" data-pin-no-hover="true"  alt="Newsletter">
+                <div class="hot-cta-footer-container">
+            <h3 class="hot-cta-footer-main-text">
+                Don’t miss out on anything!            </h3>
+            <p class="hot-cta-footer-text">
+                Subscribe to our <span> newsletter </span> and receive <span> the best content </span> on entrepreneurship and digital marketing.             </p>
+        </div>
+        <div class="hot-form-container">
+            <form method="post" class="sib_signup_form" data-list="705">
+                <div class="sib_loader" style="display:none;">
+                    <img src="https://blog.hotmart.com/wp-includes//images/spinner.gif" alt="loader">
+                </div>
+                <div class="sib_signup_box_inside_2">
+                    <div style="/*display:none*/" class="sib_msg_disp">
+                        <p class="sib-alert-message sib-alert-message-success">Sua inscrição foi realizada com sucesso.</p><p class="sib-alert-message sib-alert-message-warning">Você já está cadastrado nesta lista!</p><p class="sib-alert-message sib-alert-message-error"></p></div><input type="hidden" name="locale" value="en"><div class="sib-area name">
+                        <input type="text" class="sib-NAME-area" name="name" placeholder="Name">
+                    </div><div class="sib-area email">
+                        <input type="email" class="sib-email-area" name="email" required="required" placeholder="Email">
+                    </div><div class="sib-area terms-checkbox">
+                        <input type="checkbox" required value="false" id="ACEITO_RECEBER_CONTEUDOS_DA_HOTMART_21" class="sib-ACEITO_RECEBER_CONTEUDOS_DA_HOTMART-area" name="ACCEPT_TO_RECEIVE">
+                        <label class="sib-ACEITO_RECEBER_CONTEUDOS_DA_HOTMART-area" for="ACEITO_RECEBER_CONTEUDOS_DA_HOTMART_21">Yes, by giving my email I agree to receiving Hotmart content and I understand that I can unsubscribe at any time.</label></div><div class="sib-area submit">
+                        <input type="submit" class="sib-default-btn" value="Quero receber">
+                    </div></div>
+                </form>                    </div>
+
+            </div>
+</section>
+
+		
+
+		
+		<div class="common-footer">
+			<div class="hot-grid">
+				<div class="hot-footer-logo-container">
+					<a href="https://blog.hotmart.com/en/"><img class="hot-footer-logo" src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/footer/HOTMART_logonormalBRANCA.svg" alt="Hotmart"></a>
+					<div class="hot-footer-language-selector">
+						<nav class="basics-links"><ul><li class="lang-select"><a href="https://blog.hotmart.com/en/e-commerce/">English<img class="lang-img" src="https://blog.hotmart.com/wp-content/themes/hotmart-blog/images/BLOG_chevron-white.svg" alt="chevron"></a></li></ul><div class="language-box-lang-select"><ul><li><a href="https://blog.hotmart.com/pt-br/e-commerce/">Português</a></li><li><a href="https://blog.hotmart.com/es/ecommerce/">Español</a></li><li><a href="https://blog.hotmart.com/ar/%d8%a7%d9%84%d8%aa%d8%ac%d8%a7%d8%b1%d8%a9-%d8%a7%d9%84%d8%a5%d9%84%d9%83%d8%aa%d8%b1%d9%88%d9%86%d9%8a%d8%a9/">العربية</a></li><li>English</li><li><a href="https://blog.hotmart.com/fr/">Français</a></li></ul></div></nav>					</div>
+				</div>
+				<div class="hot-footer-menu-container">
+					<div class="hot-footer-menu-wp"><ul id="menu-hotmart_footer_en" class="hot-footer-menu-items"><li id="menu-item-10446" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10446"><a href="https://blog.hotmart.com/en/producers/">Producers</a></li>
+<li id="menu-item-10445" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10445"><a href="https://blog.hotmart.com/en/affiliates/">Affiliates</a></li>
+<li id="menu-item-80895" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-80895"><a href="https://blog.hotmart.com/en/how-hotmart-works/">How does Hotmart work?</a></li>
+<li id="menu-item-10449" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10449"><a href="https://blog.hotmart.com/en/news/">News</a></li>
+<li id="menu-item-80897" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-80897"><a href="https://blog.hotmart.com/en/career/">Career</a></li>
+<li id="menu-item-10447" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-10447"><a href="https://blog.hotmart.com/en/guides-and-tutorials/">Guides and Tutorials</a></li>
+<li id="menu-item-80898" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-80898"><a href="https://blog.hotmart.com/en/education/">Education</a></li>
+<li id="menu-item-10448" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10448"><a href="https://blog.hotmart.com/en/institutional/">Institutional</a></li>
+<li id="menu-item-80899" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-80899"><a href="https://blog.hotmart.com/en/entrepreneurship/">Entrepreneurship</a></li>
+<li id="menu-item-80894" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-80894"><a href="https://blog.hotmart.com/en/resources/">FREE RESOURCES</a></li>
+<li id="menu-item-80901" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-80901"><a href="https://blog.hotmart.com/en/marketing-digital-en/">Digital Marketing</a></li>
+<li id="menu-item-80902" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-80902"><a href="https://blog.hotmart.com/en/video-production/">Video Production</a></li>
+</ul></div>				</div>
+
+				
+
+<div class="hot-footer-social-icons-container">
+  <div class="hot-footer-social-icons">
+                  
+          <a href="http://facebook.com/hotmart.en" target="_blank" rel="noopener" title="Facebook">
+                          <img class="hot-footer-social-icon" src="https://blog.hotmart.com/blog/2020/04/FOOTER_facebook.svg" alt="facebook"">
+                      </a>
+
+                        
+          <a href="https://www.instagram.com/hotmart.en/" target="_blank" rel="noopener" title="Facebook">
+                          <img class="hot-footer-social-icon" src="https://blog.hotmart.com/blog/2020/04/FOOTER_instagram.svg" alt="instagram"">
+                      </a>
+
+                        
+          <a href="https://www.youtube.com/channel/UCSPTD68R7WqhtEVhlJz_aNA" target="_blank" rel="noopener" title="Facebook">
+                          <img class="hot-footer-social-icon" src="https://blog.hotmart.com/blog/2020/04/FOOTER_youtube.svg" alt="youtube"">
+                      </a>
+
+                        
+          <a href="https://twitter.com/hotmart_en" target="_blank" rel="noopener" title="Facebook">
+                          <img class="hot-footer-social-icon" src="https://blog.hotmart.com/blog/2020/04/FOOTER_twitter.svg" alt="twitter"">
+                      </a>
+
+                        
+          <a href="https://www.linkedin.com/company/hotmart/" target="_blank" rel="noopener" title="Facebook">
+                          <img class="hot-footer-social-icon" src="https://blog.hotmart.com/blog/2020/04/FOOTER_linkedin.svg" alt="linkedin"">
+                      </a>
+
+                        
+          <a href="https://sparkle.hotmart.com/discover" target="_blank" rel="noopener" title="Facebook">
+                          <img class="hot-footer-social-icon" src="https://blog.hotmart.com/blog/2020/02/FOOTER_sparkle.svg" alt="sparkle"">
+                      </a>
+
+                    
+    
+  </div>
+</div>
+				<div class="hot-footer-copyright-container">
+					<p class="hot-footer-copyright">© 2012 - 2020 All rights reserved. Hotmart® is a registered trademark of Launch Pad Tecnologia.</p>
+				</div>
+			</div>
+			<div>
+			</footer>
+
+			<div id="gdpr-cookies" data-gdpr-cookies>
+				<p class="text">Our site uses cookies to enhance your browsing experience.</p>
+				<button class="cta" data-gdpr-cookies-ok>All well!</button>
+      </div>
+
+</script>
+<script type='text/javascript' src='https://blog.hotmart.com/wp-content/themes/hotmart-blog/scripts/main.js?ver=1598453643'></script>
+<script type='text/javascript' src='https://blog.hotmart.com/wp-content/themes/hotmart-blog/scripts/api.js?ver=1598453643'></script>
+<script type='text/javascript' src='https://blog.hotmart.com/wp-includes/js/wp-embed.min.js'></script>
+
+		<!-- <script>
+			$(function() {
+				$('.sib_signup_form').on('submit', function (event) {
+					form = $(this);
+					listID = $(this).data('list');
+					//console.log(listID);
+					event.preventDefault();
+					form_data = $(this).serializeArray().reduce(function(obj, item) {
+							obj[item.name] = item.value;
+							return obj;
+					}, {});
+
+					data = {
+						fields: {
+							name: form_data.NAME,
+							email: form_data.email,
+							ACEITO_RECEBER_CONTEUDOS_DA_HOTMART: form_data.ACEITO_RECEBER_CONTEUDOS_DA_HOTMART
+						},
+						lists: [listID],
+					};
+
+					$.ajax({
+						type: 'POST',
+						url: 'https://api-lead-capture.hotmart.com/v1/sendinblue',
+						data: data,
+						beforeSend: function(){
+							$(form).find('.sib_loader').css('display', 'flex');
+						}
+					}).done(function (response) {
+						$(form).find('.sib_loader').css('display', 'none');
+						$(form).find('.sib-alert-message-success').addClass('active');
+						setTimeout(function() {
+							$(form).find('.sib-alert-message-success').removeClass('active');
+						}, 5000);
+
+					}).fail(function(response){
+						$(form).find('.sib-alert-message-error').addClass('active');
+					})
+				});
+			});
+		</script> -->
+
+    <script async defer data-pin-hover="true" data-pin-tall="true" data-pin-lang="en" src="//assets.pinterest.com/js/pinit.js"></script>
+
+	</body>
+</html>
+
